@@ -1,0 +1,61 @@
+#mongodb数据库信息配置
+mongo_config:
+  db: mws
+  host: 127.0.0.1
+  port: 27017
+  username: ""
+  password: ""
+  authentication_source: ""
+  udp_port: 1666
+  log_path: "log.log"
+  token_db: mws
+  token_collection_list: [ rest_token, ]
+  token_type_list: [ test ]
+
+# 测试使用的mongo配置
+online_mongo_config:
+  db: mws
+  host: 47.113.84.122
+  port: 29020
+  username: "root"
+  password: "32013201."
+  authentication_source: "admin"
+  udp_port: 1666
+  log_path: "log.log"
+  token_db: mws
+  token_collection_list: [ rest_token ]
+  token_type_list: [ test ]
+
+# mysql数据库信息配置
+mysql_config:
+  host: "47.113.84.122" # 数据库所在服务IP
+  port: 3303 # 数据库服务端口
+  username: "root" # ~用户名
+  password: "32013201." # ~密码
+  charset: "utf8"
+  # 需要进行处理的数据名称列表 《《 填入数据库名,可以连接多个
+  db_names: [ 'dev' ]
+
+# mysql导出配置
+trans_conf:
+  #如果要把表结构转成文件保存的保存路径
+  save_dir: D:\Work_Space\mws\models\
+  target_table: [ "rest_token" ]
+
+# 长效IP地址
+long_lasting:
+  ip: http://6526:5536@14.116.212.200:16789
+
+# linux和window的通信
+linux_win:
+  # 本地的socket端口
+  win_port: 59761
+  # linux服务器地址
+  linux_ip: "127.0.0.1"
+  # linux服务器端口
+  linux_port: 16795
+
+# npm的配置
+npm_config:
+  # npm库存放路径
+  path: D:\Soft_Space\Node\node_global\node_modules
